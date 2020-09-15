@@ -42,6 +42,16 @@ export const Profile = styled.div`
     border-radius: 50%;
   }
 
+  .user-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #3e3b47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   div {
     display: flex;
     flex-direction: column;
