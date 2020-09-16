@@ -44,6 +44,8 @@
       }
     ],
     "import/prefer-default-export": "off",
+    "import/no-duplicates": "off",
+    "react/jsx-indent": "off",
     "prettier/prettier": "error",
     "camelcase": "off",
     "import/extensions": [
