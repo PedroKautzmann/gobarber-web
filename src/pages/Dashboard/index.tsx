@@ -5,11 +5,13 @@ import DayPicker, { DayModifiers } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import { FiPower, FiClock } from 'react-icons/fi';
 
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/auth';
 
 import logo from '../../assets/logo.svg';
 
-import { weekDays, months, getInitials } from './utils';
+import getInitials from '../../utils/getInitials';
+import { weekDays, months } from './utils';
 
 import {
   Container,
@@ -157,7 +159,9 @@ const Dashboard: React.FC = () => {
 
             <div>
               <span>Bem-vindo,</span>
-              <strong>{user.name}</strong>
+              <Link to="/profile">
+                <strong>{user.name}</strong>
+              </Link>
             </div>
           </Profile>
 

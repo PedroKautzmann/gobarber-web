@@ -14,8 +14,3 @@ export const months = [
 ];
 
 export const weekDays = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
-
-export const getInitials = (fullName: string): string => {
-  const nameArray = fullName.toUpperCase().split(' ');
-  return `${nameArray[0][0]}${nameArray[nameArray.length - 1][0]}`;
-};
